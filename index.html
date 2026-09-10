@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garba Night & Cultural Fiesta</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: #333;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #d6336c 0%, #f71735 100%);
+      color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+    
+    nav {
+      background-color: rgba(0,0,0,0.2);
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+    
+    nav a:hover {
+      opacity: 0.7;
+    }
+    
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    section h2 {
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .event {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-left: 5px solid #d6336c;
+    }
+    
+    .event:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+    
+    .event h3 {
+      color: #d6336c;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    
+    .event p {
+      line-height: 1.6;
+      color: #555;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #d6336c, #f71735);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(214, 51, 108, 0.4);
+    }
+    
+    .info-section {
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
+      border-radius: 12px;
+      color: white;
+      margin: 2rem 0;
+      backdrop-filter: blur(10px);
+    }
+    
+    .info-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .info-section p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+    
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      border-top: 3px solid #d6336c;
+    }
+    
+    footer p {
+      margin: 0.5rem 0;
+    }
+    
+    .social-links {
+      margin-top: 1rem;
+    }
+    
+    .social-links a {
+      color: #d6336c;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      
+      section {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌟 Garba Night & Cultural Fiesta 🌟</h1>
+    <p>Celebrate tradition, music, and community!</p>
+  </header>
+
+  <nav>
+    <a href="#events">Events</a>
+    <a href="#details">Details</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="events">
+    <h2>✨ Our Events</h2>
+    <div class="events-grid">
+      <div class="event">
+        <h3>💃 Garba Dance Night</h3>
+        <p><strong>Date:</strong> 29th October</p>
+        <p>Join us for a vibrant evening of traditional Garba, with colorful attire, rhythmic beats, and joyful circles of dance under the stars. Experience the magic of traditional dance with family and friends!</p>
+      </div>
+
+      <div class="event">
+        <h3>🎵 DJ Night</h3>
+        <p><strong>Date:</strong> 30th October</p>
+        <p>Get ready to groove to electrifying music as our DJ spins the latest tracks for a high-energy night of fun and celebration. Dance till midnight with your favorite tunes!</p>
+      </div>
+
+      <div class="event">
+        <h3>🍴 Free Food & Refreshments</h3>
+        <p>Delicious traditional snacks, refreshing drinks, and a variety of cuisines will be available — all free for our guests! From samosas to mocktails, we've got it all!</p>
+      </div>
+
+      <div class="event">
+        <h3>🎭 Cultural Programs</h3>
+        <p>Enjoy performances showcasing local art, drama, and cultural traditions. This is more than an event — it's a community celebration featuring talented performers.</p>
+      </div>
+
+      <div class="event">
+        <h3>✨ Best Dressed Competition</h3>
+        <p>Show off your festive attire! Winners will receive exciting prizes and recognition on stage. Let your creativity shine in traditional or modern fusion wear!</p>
+      </div>
+
+      <div class="event">
+        <h3>🎪 Fun Games & Activities</h3>
+        <p>Participate in exciting games, competitions, and interactive activities for all age groups. Win prizes and create unforgettable memories with loved ones.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="details">
+    <div class="info-section">
+      <h3>📍 Event Details</h3>
+      <p><strong>Venue:</strong> Community Cultural Center, Main Ground</p>
+      <p><strong>Dates:</strong> 29th - 30th October 2026</p>
+      <p><strong>Time:</strong> 6:00 PM - 12:00 AM</p>
+      <p><strong>Entry:</strong> FREE for all community members</p>
+      <p><strong>What to Bring:</strong> Traditional attire (optional but encouraged), camera for memories, and your enthusiasm!</p>
+    </div>
+
+    <div class="info-section">
+      <h3>🎯 Why Attend?</h3>
+      <p>✅ Celebrate our rich cultural heritage with the community</p>
+      <p>✅ Enjoy live performances and entertainment</p>
+      <p>✅ Dance to amazing music with family and friends</p>
+      <p>✅ Win prizes and compete in fun activities</p>
+      <p>✅ Taste delicious traditional and modern food</p>
+      <p>✅ Create lasting memories at our vibrant fiesta!</p>
+    </div>
+  </section>
+
+  <section id="register">
+    <h2>📝 Register Now</h2>
+    <div class="info-section">
+      <p>Want to be part of the celebration? Register below to secure your spot and receive updates about our special events!</p>
+      <button class="cta-button">Register Here</button>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p><strong>© 2026 Garba Night & Cultural Fiesta</strong></p>
+    <p>📧 Email: info@garbafest.com | 📱 Phone: +1-800-GARBA-FUN</p>
+    <p>📍 Located at: Community Cultural Center, Main Ground</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">WhatsApp</a>
+    </div>
+    <p style="margin-top: 1.5rem; opacity: 0.8;">Designed with ❤️ for the community</p>
+  </footer>
+</body>
+</html>
